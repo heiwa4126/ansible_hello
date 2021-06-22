@@ -1,0 +1,7 @@
+---
+- name: hello
+  hosts: all
+  become: false
+  gather_facts: false
+  tasks:
+    - debug: msg="Hello from {{inventory_hostname}}"
